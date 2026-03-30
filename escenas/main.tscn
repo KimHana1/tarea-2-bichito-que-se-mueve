@@ -5,8 +5,13 @@
 
 [node name="main" type="Node2D"]
 
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1162.0
+offset_bottom = 666.0
+color = Color(0.971153, 0.837526, 0, 1)
+
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_0xm2m")]
-position = Vector2(488, 457)
+position = Vector2(500, 453)
 
 [node name="StaticBody2D" parent="." instance=ExtResource("2_h2yge")]
 position = Vector2(445, 485)
