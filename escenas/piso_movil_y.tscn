@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://4etsca60elb5"]
+
+[ext_resource type="Script" uid="uid://dxp8k6xjykk21" path="res://scripts/piso_movil_y.gd" id="1_vxyow"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uxim0"]
+size = Vector2(42, 42)
+
+[node name="pisoMovilY" type="AnimatableBody2D"]
+script = ExtResource("1_vxyow")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(1.54018e-06, 0.586275, 0.91334, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(20, 21)
+shape = SubResource("RectangleShape2D_uxim0")

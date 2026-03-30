@@ -96,3 +96,10 @@ position = Vector2(4, -4)
 scale = Vector2(0.996366, 0.871742)
 sprite_frames = SubResource("SpriteFrames_rbrud")
 animation = &"wi"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2, 2)
+limit_left = 0
+limit_top = 0
+limit_right = 1280
+limit_bottom = 720

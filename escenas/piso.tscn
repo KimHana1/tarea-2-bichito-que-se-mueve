@@ -4,6 +4,7 @@
 size = Vector2(20, 23.9535)
 
 [node name="StaticBody2D" type="StaticBody2D"]
+position = Vector2(24, 145)
 metadata/_edit_group_ = true
 
 [node name="ColorRect" type="ColorRect" parent="."]

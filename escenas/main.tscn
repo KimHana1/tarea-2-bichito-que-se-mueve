@@ -1,17 +1,39 @@
-[gd_scene load_steps=3 format=3 uid="uid://bghm14paqrt7p"]
+[gd_scene load_steps=6 format=3 uid="uid://bghm14paqrt7p"]
 
 [ext_resource type="PackedScene" uid="uid://y20ivuwww5w4" path="res://escenas/player.tscn" id="1_0xm2m"]
 [ext_resource type="PackedScene" uid="uid://bcf4pdsshy5h6" path="res://escenas/piso.tscn" id="2_h2yge"]
+[ext_resource type="PackedScene" uid="uid://4etsca60elb5" path="res://escenas/piso_movil_y.tscn" id="3_26pgj"]
+[ext_resource type="PackedScene" uid="uid://di4ntm046ecbv" path="res://escenas/piso movilxtscn.tscn" id="4_dkga6"]
+
+[sub_resource type="TileSet" id="TileSet_26pgj"]
+physics_layer_0/collision_layer = 1
 
 [node name="main" type="Node2D"]
 
+[node name="TileMap" type="TileMap" parent="."]
+scale = Vector2(-22.1643, 18.6587)
+tile_set = SubResource("TileSet_26pgj")
+format = 2
+
 [node name="ColorRect" type="ColorRect" parent="."]
-offset_right = 1162.0
-offset_bottom = 666.0
+offset_left = -16.0
+offset_top = -15.0
+offset_right = 1146.0
+offset_bottom = 651.0
+scale = Vector2(67.6495, 144.466)
 color = Color(0.971153, 0.837526, 0, 1)
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_0xm2m")]
-position = Vector2(500, 453)
+position = Vector2(318, 613)
 
 [node name="StaticBody2D" parent="." instance=ExtResource("2_h2yge")]
-position = Vector2(445, 485)
+position = Vector2(-4, 663)
+scale = Vector2(5.90435, 0.0834318)
+
+[node name="pisoMovilY" parent="." instance=ExtResource("3_26pgj")]
+position = Vector2(145, 566)
+scale = Vector2(3.6868, 0.198689)
+
+[node name="AnimatableBody2D" parent="." instance=ExtResource("4_dkga6")]
+position = Vector2(274, 461)
+scale = Vector2(-2.33912, 0.731805)
