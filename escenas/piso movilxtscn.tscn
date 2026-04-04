@@ -16,4 +16,4 @@ shape = SubResource("RectangleShape2D_u31cm")
 [node name="ColorRect" type="ColorRect" parent="."]
 offset_right = 40.0
 offset_bottom = 40.0
-color = Color(0.904568, 0.934256, 0.126198, 1)
+color = Color(0.5121, 0, 0.0514764, 1)

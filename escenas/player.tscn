@@ -1,9 +1,9 @@
 [gd_scene load_steps=14 format=3 uid="uid://y20ivuwww5w4"]
 
 [ext_resource type="Script" uid="uid://bu0stnvgojds4" path="res://scripts/character_body_2d.gd" id="1_kkt6c"]
-[ext_resource type="Texture2D" uid="uid://c1sjrj11sxcpf" path="res://assets/Diseño sin título.png" id="2_t3yu4"]
-[ext_resource type="Texture2D" uid="uid://cspv7rfe0k75y" path="res://assets/D.png" id="3_k4kro"]
-[ext_resource type="Texture2D" uid="uid://bxjo41wllwca8" path="res://assets/i.png" id="4_6nxto"]
+[ext_resource type="Texture2D" uid="uid://c1sjrj11sxcpf" path="res://assets/mov/Diseño sin título.png" id="2_t3yu4"]
+[ext_resource type="Texture2D" uid="uid://cspv7rfe0k75y" path="res://assets/mov/D.png" id="3_k4kro"]
+[ext_resource type="Texture2D" uid="uid://bxjo41wllwca8" path="res://assets/mov/i.png" id="4_6nxto"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hqtel"]
 radius = 24.0
@@ -98,8 +98,8 @@ sprite_frames = SubResource("SpriteFrames_rbrud")
 animation = &"wi"
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(2, 2)
+zoom = Vector2(3, 3)
 limit_left = 0
 limit_top = 0
-limit_right = 1280
+limit_right = 1645
 limit_bottom = 720

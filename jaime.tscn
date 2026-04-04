@@ -1,0 +1,41 @@
+[gd_scene load_steps=6 format=3 uid="uid://8xtfkvf61a5c"]
+
+[ext_resource type="Texture2D" uid="uid://bwj1is0mv5di8" path="res://assets/idle/Diseño sin título.png" id="1_pgicq"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_44xf8"]
+atlas = ExtResource("1_pgicq")
+region = Rect2(0, 100, 96, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xqunm"]
+atlas = ExtResource("1_pgicq")
+region = Rect2(101, 100, 96, 100)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rt7nu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_44xf8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xqunm")
+}],
+"loop": true,
+"name": &"prince",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pgicq"]
+size = Vector2(56, 53)
+
+[node name="jaime" type="AnimatedSprite2D"]
+position = Vector2(27, 23)
+sprite_frames = SubResource("SpriteFrames_rt7nu")
+animation = &"prince"
+frame_progress = 0.748843
+metadata/_edit_group_ = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-8, 1)
+shape = SubResource("RectangleShape2D_pgicq")
