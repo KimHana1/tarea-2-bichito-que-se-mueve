@@ -104,7 +104,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_t5tro")
 }],
 "loop": true,
-"name": &"saltito ",
+"name": &"jump",
 "speed": 5.0
 }, {
 "frames": [{
@@ -136,7 +136,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" groups=["Player"]]
 position = Vector2(-2, 16)
 script = ExtResource("1_kkt6c")
 metadata/_edit_horizontal_guides_ = [-16.0, 26.0]
@@ -151,7 +151,7 @@ shape = SubResource("RectangleShape2D_j7xnp")
 position = Vector2(4, -4)
 scale = Vector2(0.996366, 0.871742)
 sprite_frames = SubResource("SpriteFrames_rbrud")
-animation = &"saltito "
+animation = &"jump"
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(3, 3)

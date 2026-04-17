@@ -2,7 +2,7 @@ extends Node
 
 @onready var player: CharacterBody2D = self.owner
 
-var gravity: float = ProjectSettings.get_setting("physics/2d/default_gravity")
+@export var gravity = 900
 
 enum STATE {
 	idle,
@@ -13,7 +13,6 @@ enum STATE {
 }
 
 var current_state = STATE.idle
-
 
 func _physics_process(delta):
 
@@ -66,8 +65,8 @@ func _aplicar_animacion():
 				player.anim.play("wi")
 
 		STATE.saltando:
-			if player.anim.animation != "saltito":
-				player.anim.play("saltito")
+			if player.anim.animation != "jump":
+				player.anim.play("jump")
 
 		STATE.cayendo:
 			if player.anim.animation != "caida":

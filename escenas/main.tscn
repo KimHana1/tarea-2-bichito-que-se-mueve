@@ -17,7 +17,7 @@ scale = Vector2(1.56, 1.24)
 texture = ExtResource("1_dkga6")
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_0xm2m")]
-position = Vector2(734, 625)
+position = Vector2(1267, 625)
 scale = Vector2(0.137948, 0.124577)
 
 [node name="StaticBody2D" parent="." instance=ExtResource("2_h2yge")]
@@ -69,4 +69,5 @@ position = Vector2(1154, 279)
 scale = Vector2(-2.33912, 0.731805)
 
 [node name="jaime" parent="." instance=ExtResource("6_a8p2b")]
-position = Vector2(1521, 52)
+position = Vector2(1075, 638)
+scale = Vector2(0.112173, 0.0834861)
